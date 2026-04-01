@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<!-- Cabeçalho com navegação entre as páginas -->
+<header>
+  <h2>Guia de Turismo</h2>
+  <nav>
+    <a href="index.html">Lista de Pontos</a> | 
+    <a href="cadastro.html">Novo Cadastro</a>
+  </nav>
+  <hr>
+</header>
+
+<!-- Título da página -->
+<h1>Pontos Turísticos</h1>
+
+<!-- Campo de busca que filtra os pontos em tempo real -->
+<input type="text" id="busca" placeholder="Buscar..." onkeyup="carregar()">
+
+<!-- Lista onde os pontos turísticos serão exibidos -->
+<ul id="lista"></ul>
+
+<!-- Lista onde os pontos turísticos serão exibidos -->
+<div id="paginacao" style="margin-top: 20px;"></div>
+
+<!-- Área onde será exibida a paginação (ex: página 1, 2...) -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+ALGORITMO: TROCA DE PNEU FURADO
+
+1. Identificar o pneu furado e conduzir o veículo para um local plano e seguro.
+2. Desligar o motor, acionar o freio de mão e ligar o pisca-alerta.
+3. Posicionar o triângulo de sinalização a uma distância segura na via.
+4. Abrir o porta-malas e validar se o estepe e as ferramentas (macaco e chave de roda) estão disponíveis.
+5. Com o carro ainda no chão, utilizar a chave de roda para afrouxar os parafusos do pneu furado (apenas afrouxar, sem remover).
+6. Posicionar o macaco no ponto de apoio correto do chassi e elevar o veículo até o pneu perder o contato com o chão.
+7. Remover os parafusos completamente e retirar o pneu furado do eixo.
+8. Encaixar o estepe no lugar e rosquear os parafusos manualmente para fixar a roda.
+9. Acionar o macaco no sentido inverso para descer o veículo até o pneu apoiar totalmente no chão.
+10. Utilizar a chave de roda para dar o aperto final nos parafusos de forma cruzada (em "X").
+11. Guardar o pneu furado, o macaco e a chave de roda no porta-malas.
+12. Recolher o triângulo de sinalização e retomar a viagem.

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detalhes</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<!-- Cabeçalho com navegação entre as páginas -->
+<header>
+  <h2>Guia de Turismo</h2>
+  <nav>
+    <a href="index.html">Lista de Pontos</a> |
+    <a href="cadastro.html">Novo Cadastro</a>
+  </nav>
+  <hr>
+</header>
+
+<h1>Detalhes do Ponto</h1>
+
+<!-- Campos onde os dados serão exibidos -->
+<p id="nome"></p>
+<p id="descricao"></p>
+<p id="localizacao"></p>
+<p id="cidade"></p>
+
+<!-- Link para voltar para a listagem -->
+<a href="index.html">Voltar</a>
+
+<br><br>
+
+<!-- Botão para excluir o ponto -->
+<button onclick="excluir()" style="color: red; cursor: pointer;">Excluir Ponto</button>
+
+<!-- Arquivo principal de funções -->
+<script src="script.js"></script>
+
+<script>
+  // Pega o item selecionado salvo no navegador
+  let item = JSON.parse(localStorage.getItem("selecionado"));
+
+  // Exibe os dados do ponto na tela
+  document.getElementById("nome").innerHTML = "<strong>Nome:</strong> " + item.nome;
+  document.getElementById("descricao").innerHTML = "<strong>Descrição:</strong> " + item.descricao;
+  document.getElementById("localizacao").innerHTML = "<strong>Localização:</strong> " + item.localizacao;
+  document.getElementById("cidade").innerHTML = "<strong>Cidade:</strong> " + item.cidade;
+
+  // Função chamada ao clicar no botão de excluir
+  function excluir() {
+    // Verifica se o item possui ID válido
+    if (item && item.id) {
+        excluirPonto(item.id);
+    } else {
+        alert("Erro: ID não encontrado. Volte para a lista e tente novamente.");
+    }
+  }
+</script>
+
+</body>
+</html>
